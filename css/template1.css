@@ -463,3 +463,65 @@ footer span{
   color: var(--main-color);
 }
 /* footer end */
+/* ================= Cities Section ================= */
+
+.cities{
+    padding:80px 0;
+    background:#f8f5f1;
+}
+
+.cities-container{
+    width:80%;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.city-card{
+    background:#fff;
+    border:2px solid #8b5e3c;
+    border-radius:18px;
+    padding:25px;
+    transition:.3s;
+}
+
+.city-card i{
+    font-size:22px;
+    color:#5c3b1e;
+    margin-bottom:15px;
+}
+
+.city-card h3{
+    color:#4b2c16;
+    margin-bottom:12px;
+    font-size:22px;
+}
+
+.city-card p{
+    color:#777;
+    line-height:1.7;
+    font-size:15px;
+}
+
+.city-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 10px 20px rgba(0,0,0,.1);
+}
+
+@media(max-width:991px){
+
+    .cities-container{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:767px){
+
+    .cities-container{
+        grid-template-columns:1fr;
+    }
+
+}
